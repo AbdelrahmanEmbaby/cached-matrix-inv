@@ -1,0 +1,9 @@
+rm(list=ls())
+
+x=(edit(data.frame()))
+x
+result = aov(response~treatment,data = x)
+result
+summary(result)
+model.tables(result)
+boxplot(response~treatment,data = x)
